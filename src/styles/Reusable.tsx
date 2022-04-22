@@ -1,19 +1,21 @@
 import styled from "styled-components";
 
 interface Props {
-  w: string;
-  m: string;
-  p: string;
-  fd: string;
-  jc: string;
-  ai: string;
-  fw: string;
-  as: string;
+  w?: string;
+  h?: string;
+  m?: string;
+  p?: string;
+  fd?: string;
+  jc?: string;
+  ai?: string;
+  fw?: string;
+  as?: string;
 }
 
 export const FBox = styled.div<Props>`
   display: flex;
   width: ${(props) => (props.w ? props.w : "unset")};
+  height: ${(props) => (props.h ? props.h : "unset")};
   margin: ${(props) => (props.m ? props.m : "0px")};
   padding: ${(props) => (props.p ? props.p : "0px")};
   flex-direction: ${(props) => (props.fd ? props.fd : "unset")};
