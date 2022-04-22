@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeroImg = styled.img`
   width: 100%;
   height: 99.82vh;
-  object-fit: fit;
+  object-fit: fill;
 `;
 export const Container = styled.div`
   width: 100%;

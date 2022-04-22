@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-interface Props {
+interface IProps {
   w?: string;
   h?: string;
   m?: string;
@@ -12,7 +12,7 @@ interface Props {
   as?: string;
 }
 
-export const FBox = styled.div<Props>`
+export const FBox = styled.div<IProps>`
   display: flex;
   width: ${(props) => (props.w ? props.w : "unset")};
   height: ${(props) => (props.h ? props.h : "unset")};

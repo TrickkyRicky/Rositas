@@ -10,6 +10,7 @@ const CreateGlobal = createGlobalStyle`
   html {
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
   }
 `;
 

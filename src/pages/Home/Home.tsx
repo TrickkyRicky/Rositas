@@ -1,7 +1,6 @@
 import React from "react";
 import { Navigation, Pagination, A11y, Autoplay } from "swiper";
-
-import { Swiper, SwiperSlide } from "swiper/react";
+import { SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,10 +12,11 @@ import img2 from "../../assets/seating1.jpeg";
 import img3 from "../../assets/food1.webp";
 
 import Hero from "../../components/UI/Hero/Hero";
+import { Carousel } from "./styles/styles";
 
 const Home = () => {
   return (
-    <Swiper
+    <Carousel
       modules={[Navigation, Pagination, A11y, Autoplay]}
       navigation
       pagination={{ clickable: true }}
@@ -34,7 +34,16 @@ const Home = () => {
       <SwiperSlide>
         <Hero src={img3} />
       </SwiperSlide>
-    </Swiper>
+      {/* <SwiperSlide>
+        <Hero src={img4} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Hero src={img5} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Hero src={img6} />
+      </SwiperSlide> */}
+    </Carousel>
   );
 };
 
